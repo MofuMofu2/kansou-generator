@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <b-form>
+    <b-form class="m-5">
       <b-form-group id="kind-group" label="種類"
         ><b-form-select id="kind-select"></b-form-select
       ></b-form-group>
