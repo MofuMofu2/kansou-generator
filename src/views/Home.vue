@@ -22,6 +22,14 @@
       <b-form-group id="complement-group" label="補足"
         ><b-form-textarea id="complement-form"></b-form-textarea
       ></b-form-group>
+      <b-form-row>
+        <b-col cols="10"></b-col>
+        <b-col cols="2">
+          <b-button pill type="submit" variant="primary" class="float-right"
+            >感想文をつくる</b-button
+          >
+        </b-col>
+      </b-form-row>
     </b-form>
   </div>
 </template>
