@@ -5,7 +5,7 @@
         <b-form-select id="kind-select" v-model="form.kind" />
       </b-form-group>
       <b-form-group id="title-group" label="タイトル"
-        ><b-form-input id="title-form" v-model="form.title" />
+        ><b-form-input id="title-form" v-model="form.title" :state="title" />
       </b-form-group>
       <b-form-group id="link-group" label="URLリンク"
         ><b-form-input id="link-form" v-model="form.link" />
@@ -14,7 +14,11 @@
         ><b-form-select id="emort-form" v-model="form.emort" />
       </b-form-group>
       <b-form-group id="description-group" label="どんなところが"
-        ><b-form-textarea id="description-form" v-model="form.description" />
+        ><b-form-textarea
+          id="description-form"
+          v-model="form.description"
+          :state="description"
+        />
       </b-form-group>
       <b-form-group id="emotion-group" label="何を感じたか"
         ><b-form-textarea id="emotion-form" v-model="form.emotion" />
@@ -50,5 +54,13 @@ export default class Home extends Vue {
     emotion: "",
     complement: "",
   };
+
+  get title(): boolean {
+    return this.form.title !== "";
+  }
+
+  get description(): boolean {
+    return this.form.description !== "";
+  }
 }
 </script>
