@@ -20,6 +20,7 @@
     <b-form-group id="description-group" label="どんなところが"
       ><b-form-textarea
         id="description-form"
+        data-test="description"
         v-model="form.description"
         :state="description"
       />

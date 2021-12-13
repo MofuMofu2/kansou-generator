@@ -17,5 +17,10 @@ describe("KansouForms.vue", () => {
     expect(wrapper.find('[data-test="title"]').classes()).toContain(
       "is-invalid"
     );
+
+    // 説明文が空の場合、エラーフォームの見た目になることをテスト
+    expect(wrapper.find('[data-test="description"]').classes()).toContain(
+      "is-invalid"
+    );
   });
 });
