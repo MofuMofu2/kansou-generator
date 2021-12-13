@@ -4,7 +4,12 @@
       <b-form-select id="kind-select" v-model="form.kind" />
     </b-form-group>
     <b-form-group id="title-group" label="タイトル"
-      ><b-form-input id="title-form" v-model="form.title" :state="title" />
+      ><b-form-input
+        id="title-form"
+        data-test="title"
+        v-model="form.title"
+        :state="title"
+      />
     </b-form-group>
     <b-form-group id="link-group" label="URLリンク"
       ><b-form-input id="link-form" v-model="form.link" />
