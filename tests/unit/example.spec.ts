@@ -1,12 +1,9 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import KansouForms from "@/components/KansouForms.vue";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+describe("KansouForms.vue", () => {
+  it("テストが動くこと", () => {
+    const wrapper = shallowMount(KansouForms);
+    expect(wrapper.exists()).toBeTruthy();
   });
 });
